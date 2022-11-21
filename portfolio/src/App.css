@@ -4,6 +4,23 @@
   text-align: center;
 }
 
+nav {
+ 
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+nav a {
+  font-family: 'Wasted';
+  color: #fc12c2;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-size: 3em;
+}
+
 @font-face {
   font-family: 'Bubble';
   src: local('Bubble'), url(./fonts/Bubble.ttf) format('truetype');
@@ -62,6 +79,13 @@
   font-family: 'Wasted';
 }
 
+.textWork{
+  padding: 10px;
+  font-size: 7vw;
+  color: black;
+  font-family: 'Wasted';
+
+}
 
 .textContainer{
   display: flex;
@@ -285,5 +309,131 @@ body {
   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fc12c2);
         margin: -2px -6px;
         padding:  2px  6px;
+}
+
+.email1{
+  color: black;
+  text-decoration: none;
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fc12c2);
+        margin: -2px -6px;
+        padding:  2px  6px;
+        width: 70%;
+}
+
+.workContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.worktextContainer{
+  padding-left: 5%;
+  padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  padding: 10px;
+  font-size: 4.5vw;
+  font-family: 'Wasted';
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  /*background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fc12c2);
+        margin: -2px -6px;
+        padding:  2px  6px;*/
+
+}
+
+.jobtitle{
+  padding: 10px;
+  font-size: 2vw;
+  font-family: 'Wasted';
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+
+}
+
+.align{
+  padding-left: 5%;
+  padding-bottom: 10%;
+  text-align: start;
+}
+
+.mockup{
+ width: 50%
+}
+
+.glow-on-hover {
+  justify-content: center;
+  font-family: 'Wasted';
+  font-size: 350%;
+  width: 50%;
+  height: 12%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.link{
+  color: white;
+  text-decoration: none;
 }
 

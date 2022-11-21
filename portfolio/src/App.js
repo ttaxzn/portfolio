@@ -7,8 +7,7 @@ import github from './svgs/git.svg';
 import linkedin from './svgs/in.svg';
 import insta from './svgs/insta.svg';
 import barcode from './pngs/Code-128.PNG';
-import heart from './pngs/spray-paint.png';
-
+import mockup from './svgs/mockup.svg';
 
 import React from 'react';
 import './App.css';
@@ -33,13 +32,22 @@ function FadeInSection(props) {
   );
 }
 
+
+
 function App() {
   return (
     <div className="App">
 
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#work">work</a>
+  <a href="#contact">contact</a>
+</nav>
+
       {/* THIS IS THE NAME PORTION*/}
       <header className="App-header">
-      <img src={name} className="name"/>
+      <img src={name} className="name" id="home"/>
       <img src={sub} className="sub"/>
       </header>
 
@@ -49,7 +57,7 @@ function App() {
       <div className='aboutContainer'>
       <div class="about">WORK</div>
       </div>
-<FadeInSection>
+{/*<FadeInSection>
       <div class="timeline">
   <div class="container left">
     <div class="content">
@@ -64,7 +72,28 @@ function App() {
     </div>
   </div>
 </div>
-</FadeInSection>
+  </FadeInSection>*/}
+<FadeInSection>
+    <div className='workContainer' id="work">
+      <div className='worktextContainer'>
+        <div className='align'>
+        <div className='title'>
+          WALMART global tech
+        </div>
+        <div className='jobtitle'>
+          software engineer 3 / front end developer
+        </div>
+        </div>
+        <button class="glow-on-hover" type="button">
+          <a href="https://www.figma.com/file/3XIlmJnS7DI4561jQVrPOp/Lumos---Dev?node-id=3921%3A486358&t=l2hcise9T9Hvm97o-0" className='link'>
+          SEE PROJECT
+          </a>
+          </button>
+      </div>
+      <img src={mockup} className="mockup"/>
+      </div>
+      </FadeInSection>  
+     
 
 
 
@@ -72,7 +101,7 @@ function App() {
 
 <div className='aboutContainer'>
       <div class="about">
-        <div class="hover-underline-animation">
+        <div class="hover-underline-animation" id="contact">
         SAY HI!
         </div>
         </div>
@@ -125,4 +154,5 @@ Kansas city, Missouri
     
   );
 }
+
 export default App;
