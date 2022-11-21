@@ -1,38 +1,103 @@
 .App {
+  background-color: black;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Bubble';
+  src: local('Bubble'), url(./fonts/Bubble.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Wasted';
+  src: local('Wasted'), url(./fonts/Wasted.ttf) format('truetype');
 }
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.name{
+  padding-top: 13rem;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.sub{
+  max-width: 80%;
+}
+
+.about{
+  font-family: 'Wasted', Arial, Helvetica, sans-serif;
+  font-size: 10vw;
+  padding-top: 50rem;
+  margin-bottom: .5rem;
+}
+.aboutContainer{
+  display: flex;
+  flex-direction: row;
+  padding-left: 6rem;
+}
+.text1{
+  padding: 10px;
+  font-size: 3vw;
+  color: black;
+  font-family: 'Wasted';
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card{
+  border-width: 15px;
+  border-color: black;
+  border-radius: 20px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 70%;
+  
+  
+}
+
+.cardContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.img{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: block;
+  width: 100%;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(5vh);
+  visibility: hidden;
+  transition: opacity 1.5s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+
+
+
+@keyframes textclip {
   to {
-    transform: rotate(360deg);
+    background-position: 200% center;
   }
 }
+
