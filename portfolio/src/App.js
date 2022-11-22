@@ -49,6 +49,7 @@ function App() {
       <header className="App-header">
       <img src={name} className="name" id="home"/>
       <img src={sub} className="sub"/>
+
       </header>
 
 
@@ -57,22 +58,7 @@ function App() {
       <div className='aboutContainer'>
       <div class="about">WORK</div>
       </div>
-{/*<FadeInSection>
-      <div class="timeline">
-  <div class="container left">
-    <div class="content">
-    <img src={bestbuy} class="content1"/>
-    <p class="imagetext">associate software engineer intern</p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-    <img src={walmart} class="content1"/>
-      <p class="imagetext">software engineer 3 intern</p>
-    </div>
-  </div>
-</div>
-  </FadeInSection>*/}
+
 <FadeInSection>
     <div className='workContainer' id="work">
       <div className='worktextContainer'>
